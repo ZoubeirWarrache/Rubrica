@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="458.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rubrica.controller.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="176.0" layoutY="204.0" prefHeight="23.0" prefWidth="165.0" text="Nome Utente" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="297.0" prefHeight="37.0" prefWidth="117.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="campoNome" layoutX="77.0" layoutY="234.0" opacity="0.7" prefHeight="32.0" prefWidth="306.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="campoPassword" layoutX="77.0" layoutY="334.0" onKeyPressed="#handleEnterPressed" opacity="0.7" prefHeight="37.0" prefWidth="306.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <Button contentDisplay="RIGHT" layoutX="82.0" layoutY="434.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="32.0" prefWidth="136.0" styleClass="Button" stylesheets="@login.css" text="login" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/login3.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button contentDisplay="RIGHT" layoutX="240.0" layoutY="434.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="44.0" prefWidth="136.0" styleClass="Button" stylesheets="@login.css" text="Sign up" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/sign-in.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="14.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/g68.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="errore" layoutX="116.0" layoutY="389.0" text="Nome Utente o Password sbagliato !" textFill="#da0505" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="553.0" prefWidth="601.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rubrica.controller.DialogoEditaContattiController">
+    <stylesheets>
+        <URL value="@dialogoeditacontatti.css" />
+    </stylesheets>
+   <children>
+      <GridPane prefHeight="553.0" prefWidth="601.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Nome" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font></Label>
+            <Label text="Cognome" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font></Label>
+            <Label text="Data di nascità" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font></Label>
+            <Label text="Sesso" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font></Label>
+            <Label text="Numero di telefono" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font></Label>
+            <Label text="Indirizzo di residenza" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font></Label>
+            <Label text="Città di residenza" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Calibri Bold" size="21.0" />
+               </font></Label>
+            <Label text="C.A.P." GridPane.rowIndex="7">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font></Label>
+            <TextField fx:id="campoNome" prefHeight="35.0" prefWidth="270.0" promptText="es.: Mario" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font></TextField>
+            <TextField fx:id="campoCognome" prefHeight="35.0" prefWidth="270.0" promptText="es.: Rossi" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font></TextField>
+            <TextField fx:id="campoDataNascita" prefHeight="35.0" prefWidth="270.0" promptText="in forma dd.MM.yyyy" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <TextField fx:id="campoSesso" prefHeight="35.0" prefWidth="270.0" promptText="M(maschio) o F(femmina)" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font></TextField>
+            <TextField fx:id="campoNumTelefono" prefHeight="35.0" prefWidth="270.0" promptText="es.: 368 7562854" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font></TextField>
+            <TextField fx:id="campoIndirizzoResidenza" prefHeight="35.0" prefWidth="270.0" promptText="es.: Via Zamboni 33" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font></TextField>
+            <TextField fx:id="campoCittaResidenza" prefHeight="35.0" prefWidth="270.0" promptText="es.: Bologna" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font></TextField>
+            <TextField fx:id="campoCAP" prefHeight="35.0" prefWidth="270.0" promptText="es.: 40716" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font></TextField>
+            <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleSalva" prefHeight="40.0" prefWidth="135.0" stylesheets="@dialogoeditacontatti.css" text="Salva" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/save%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleAnnulla" prefHeight="40.0" prefWidth="135.0" stylesheets="@dialogoeditacontatti.css" text="Annulla" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Calibri Bold" size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cancel%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

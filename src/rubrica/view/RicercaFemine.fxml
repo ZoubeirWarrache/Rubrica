@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="308.0" prefWidth="441.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rubrica.controller.RicercaFemineController">
+    <stylesheets>
+        <URL value="@ricercafemine.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tabellaFemine" fixedCellSize="40.0" prefHeight="308.0" prefWidth="441.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="colonnaCognome" prefWidth="150.0" text="Cognome" />
+          <TableColumn fx:id="colonnaNome" prefWidth="147.0" text="Nome" />
+            <TableColumn fx:id="colonnaSesso" prefWidth="143.0" text="Sesso" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
